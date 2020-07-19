@@ -12,7 +12,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 //Sets handlebars as the HTML engine
 app.engine("handlebars", exphbs({ defaultLayout : "main "}))
-app.set('view endine', 'handlebars');
+app.set('view engine', 'handlebars');
 
 // const routes = require()
 
