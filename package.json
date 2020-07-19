@@ -1,0 +1,22 @@
+{
+  "name": "burger",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jfisher396/burger.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jfisher396/burger/issues"
+  },
+  "homepage": "https://github.com/jfisher396/burger#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
