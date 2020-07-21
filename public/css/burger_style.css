@@ -1,17 +1,13 @@
 li {
     padding: 5px;
     margin: 5px;
-    background: #faebd7;
+    background: lightgreen;
 }
 
-.label {
-    font-weight: bold;
-}
-
-.create-update-form {
+.create-form {
     padding: 5px;
     margin: 5px;
-    background: aqua;
+
 }
 
 .form-group {
