@@ -1,38 +1,53 @@
-<h1>Burger Eater!</h1>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12 text-center" id="top-bar">
+            <h1>Burger Eater!</h1>
+        </div>
 
-<h2>Burgers that are ready to eat!</h2>
+        <div class="col-sm-6" class="task">
+            <h2>Burgers that are ready to eat!</h2>
+            <div class="row">
+                <ul>
+                    {{#each burgers}}
+                    {{#unless devoured}}
+                    {{> burgers/burger-block devoured=true}}
+                    {{/unless}}
+                    {{/each}}
+                </ul>
+            </div>
+        </div>
 
-<ul>
-    {{#each burgers}}
-    {{#unless devoured}}
-    {{> burgers/burger-block devoured=true}}
-    {{/unless}}
-    {{/each}}
-</ul>
 
-<h2>Burgers that have been devoured!</h2>
-
-<ul>
-    {{#each burgers}}
-    {{#if devoured}}
-    {{> burgers/burger-block devoured=false}}
-    {{/if}}
-    {{/each}}
-</ul>
-
-<h2>Add a Burger</h2>
-<form class="create-form">
-
-    <div class="form-group">
-        <label for="ca">Burger Name:</label>
-        <input type="text" id="ca" name="name">
+        <div class="col-sm-6" class="task">
+            <h2>Burgers that have been devoured!</h2>
+            <div class="row">
+                <ul>
+                    {{#each burgers}}
+                    {{#if devoured}}
+                    {{> burgers/burger-block devoured=false}}
+                    {{/if}}
+                    {{/each}}
+                </ul>
+            </div>
+        </div>
     </div>
+</div>
 
-    {{!-- <div class="form-group">
-        <label for="devoured">Devour?</label><br> --}}
-        {{!-- <input type="radio" name="devoured" value="1" checked> Devoured!<br>
-        <input type="radio" name="not-devoured" value="0"> Ready to be Eaten! --}}
-    {{!-- </div> --}}
+<div class="container">
+    <div class="row">
 
-    <button type="submit">Add Burger</button>
-</form>
+
+        <h2>Add a Burger</h2>
+        <form class="create-form">
+            <div class="col-sm-8 text-center">
+                <div class="form-group">
+                    <label for="ca">Burger Name:</label>
+                    <input type="text" id="ca" name="name">
+                </div>
+
+
+                <button type="submit">Add Burger</button>
+        </form>
+    </div>
+</div>
+</div>
