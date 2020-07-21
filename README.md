@@ -12,6 +12,8 @@
 
   A burger logger using MySQL, Node, Express, Handlebars and a homemade ORM.
   
+  Link to live site: https://stark-badlands-92104.herokuapp.com/
+  
   ---
   ![GitHub Logo](/media/burger-eater.png)
   ---
