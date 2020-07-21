@@ -13,7 +13,7 @@
   A burger logger using MySQL, Node, Express, Handlebars and a homemade ORM.
   
   ---
-  ![GitHub Logo]()
+  ![GitHub Logo](/media/burger-eater.png)
   ---
 
   ## Table of Contents:
