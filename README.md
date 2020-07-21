@@ -11,7 +11,9 @@
   ## Description:
 
   A burger logger using MySQL, Node, Express, Handlebars and a homemade ORM.
-
+  
+  ---
+  ![GitHub Logo]()
   ---
 
   ## Table of Contents:
