@@ -1,8 +1,6 @@
 
   
-  # Project Title:
-
-  Burger Eater!
+  # Burger Eater!
 
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
   
@@ -11,7 +9,12 @@
   ## Description:
 
   A burger logger using MySQL, Node, Express, Handlebars and a homemade ORM.
-
+  
+  Link to live site: https://stark-badlands-92104.herokuapp.com/
+  
+  ---
+   ## Visuals:
+  ![GitHub Logo](/media/burger-eater.png)
   ---
 
   ## Table of Contents:
