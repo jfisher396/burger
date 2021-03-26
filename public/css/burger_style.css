@@ -23,6 +23,7 @@ li {
   margin: 5px auto;
   font-size: larger;
   font-weight: 500;
+  vertical-align: middle;
   background: lightgreen;
   min-width: 275px;
   border-radius: 3px;
@@ -45,6 +46,13 @@ li {
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
+}
+
+#middle-column {
+  padding-right: 0;
+  max-width: 370px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 ion-icon {
@@ -71,9 +79,10 @@ ul {
 }
 
 #not-devoured li {
-  
+
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
   min-width: 100%;
 }
 
@@ -83,4 +92,12 @@ ul {
 
 #devoured li {
   text-align: center;
+}
+
+@media only screen and (max-width: 800px) {
+  .main {
+  
+  min-height: 100%;
+  
+}
 }
