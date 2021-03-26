@@ -13,7 +13,7 @@ li {
   padding: 10px;
   margin: 5px;
   font-size: larger;
-  /* background: lightgreen; */
+  background: lightgreen;
   border-radius: 3px;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -36,10 +36,6 @@ li {
   -o-border-radius: 10px;
 }
 
-.not-devoured {
-  background: #fff;
-  /* border: 3px solid lightgreen; */
-}
 
 .create-form {
   padding: 15px;

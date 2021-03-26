@@ -6,7 +6,7 @@
             <div class="col-md-4 col-sm-12">
                 <h2>Burgers that are ready to eat!</h2>
                 <div class="row">
-                    <ul>
+                    <ul id="not-devoured">
                         {{#each burgers}}
                         {{#unless devoured}}
                         {{> burgers/burger-block devoured=true}}
@@ -25,7 +25,7 @@
                             {{!-- <img id="burger-image" src="/images/burger.jpg" alt="burger"> --}}
                             <label for="ca"></strong></label>
                             <input type="text" id="ca" name="name" placeholder="Burger Name">
-                            <button type="submit">Add Burger</button>
+                            <button class="btn btn-danger" type="submit">Add Burger</button>
                         </div>
                 </form>
             </div>
@@ -34,7 +34,7 @@
             <div class="col-md-4 col-sm-12">
                 <h2>Burgers that have been devoured!</h2>
                 <div class="row">
-                    <ul>
+                    <ul id="devoured">
                         {{#each burgers}}
                         {{#if devoured}}
                         {{> burgers/burger-block devoured=false}}
