@@ -1,11 +1,14 @@
 body {
   background-color: #fc6;
+  text-rendering: optimizeLegibility;
 }
 
 #title {
-  color: #f30;
+  font-family: 'Bebas Neue', cursive;
+  color: #fff;
   text-align: center;
-  margin-top: 5px;
+  margin-top: 20px;
+  font-size: 60px;
 }
 
 .column-title {
@@ -17,7 +20,7 @@ body {
 li {
   list-style-type: none;
   padding: 10px;
-  margin: 5px;
+  margin: 5px auto;
   font-size: larger;
   font-weight: 500;
   background: lightgreen;
@@ -32,7 +35,7 @@ li {
 .main {
   margin-top: 50px;
   min-height: 800px;
-  background-image: url("/images/burger.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/images/burger.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -46,6 +49,10 @@ li {
 
 ion-icon {
   font-size: 25px;
+}
+
+.create-form {
+  margin-top: 20px;
 }
 
 .form-group {
@@ -67,7 +74,11 @@ ul {
   
   display: flex;
   justify-content: space-between;
-  min-width: 325px;
+  min-width: 100%;
+}
+
+#devoured {
+  margin: 0 auto;
 }
 
 #devoured li {
