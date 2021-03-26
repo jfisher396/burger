@@ -4,7 +4,7 @@ body {
 
 h1 {
     color: #f30;
-    margin-top: 20px;
+    margin-top: 5px;
 }
 
 li {
@@ -16,7 +16,13 @@ li {
 }
 
 .main {
+    margin-top: 50px;
     background-color: #fff;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
 }
 
 .create-form {
@@ -27,6 +33,11 @@ li {
 
 .form-group {
     margin-bottom: 5px;
+}
+
+#burger-image {
+    max-width: 100%;
+    margin: 10px auto;
 }
 
 
