@@ -1,33 +1,44 @@
 body {
   background-color: #fc6;
-  
 }
 
-h1 {
+#title {
   color: #f30;
+  text-align: center;
   margin-top: 5px;
 }
 
 li {
+  list-style-type: none;
   padding: 10px;
   margin: 5px;
   font-size: larger;
-  background: lightgreen;
-  min-width: 100%;
+  /* background: lightgreen; */
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
 }
 
 .main {
   margin-top: 50px;
+  min-height: 800px;
   background-image: url("/images/burger.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.not-devoured {
+  background: #fff;
+  /* border: 3px solid lightgreen; */
 }
 
 .create-form {
