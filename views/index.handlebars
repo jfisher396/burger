@@ -1,52 +1,55 @@
 <div class="container">
     <div class="row">
-        <div class="col-sm-12 text-center" id="top-bar" >
-            <img src="/images/burger.jpg" alt="burger" width="400">
+        <div class="col-sm-12 text-center" id="top-bar">
+            {{!-- <img src="/images/burger.jpg" alt="burger" width="400"> --}}
             <h1>Burger Eater!</h1>
         </div>
+    </div>
 
-        <div class="col-sm-6" class="task">
-            <h2>Burgers that are ready to eat!</h2>
-            <div class="row">
-                <ul>
-                    {{#each burgers}}
-                    {{#unless devoured}}
-                    {{> burgers/burger-block devoured=true}}
-                    {{/unless}}
-                    {{/each}}
-                </ul>
-            </div>
-        </div>
-
-
-        <div class="col-sm-6" class="task">
-            <h2>Burgers that have been devoured!</h2>
-            <div class="row">
-                <ul>
-                    {{#each burgers}}
-                    {{#if devoured}}
-                    {{> burgers/burger-block devoured=false}}
-                    {{/if}}
-                    {{/each}}
-                </ul>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <h2>Add a Burger</h2>
+                <form class="create-form">
+                    <div class="col-sm-8 text-center">
+                        <div class="form-group">
+                            <label for="ca"></strong></label>
+                            <input type="text" id="ca" name="name" placeholder="Burger Name">
+                            <button type="submit">Add Burger</button>
+                        </div>
+                </form>
             </div>
         </div>
     </div>
-</div>
 
-<div class="container">
-    <div class="row">
-        <h2>Add a Burger</h2>
-        <form class="create-form">
-            <div class="col-sm-8 text-center">
-                <div class="form-group">
-                    <label for="ca"><strong>Burger Name:</strong></label>
-                    <input type="text" id="ca" name="name">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm" class="task">
+                <h2>Burgers that are ready to eat!</h2>
+                <div class="row">
+                    <ul>
+                        {{#each burgers}}
+                        {{#unless devoured}}
+                        {{> burgers/burger-block devoured=true}}
+                        {{/unless}}
+                        {{/each}}
+                    </ul>
                 </div>
+            </div>
 
 
-                <button type="submit">Add Burger</button>
-        </form>
+            <div class="col-sm" class="task">
+                <h2>Burgers that have been devoured!</h2>
+                <div class="row">
+                    <ul>
+                        {{#each burgers}}
+                        {{#if devoured}}
+                        {{> burgers/burger-block devoured=false}}
+                        {{/if}}
+                        {{/each}}
+                    </ul>
+                </div>
+            </div>
+        </div>
     </div>
-</div>
 </div>
