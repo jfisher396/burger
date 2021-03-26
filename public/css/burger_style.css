@@ -1,44 +1,45 @@
 body {
-    background-color: #fc6;
+  background-color: #fc6;
+  
 }
 
 h1 {
-    color: #f30;
-    margin-top: 5px;
+  color: #f30;
+  margin-top: 5px;
 }
 
 li {
-    padding: 10px;
-    margin: 5px;
-    font-size: larger;
-    background: lightgreen;
-    min-width: 100%;
+  padding: 10px;
+  margin: 5px;
+  font-size: larger;
+  background: lightgreen;
+  min-width: 100%;
 }
 
 .main {
-    margin-top: 50px;
-    background-color: #fff;
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
+  margin-top: 50px;
+  background-image: url("/images/burger.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
 }
 
 .create-form {
-    padding: 15px;
-    margin: 5px;
-
+  padding: 15px;
+  margin: 5px;
 }
 
 .form-group {
-    margin-bottom: 5px;
+  margin-bottom: 5px;
 }
 
-#burger-image {
-    max-width: 100%;
-    margin: 10px auto;
-}
-
-
-
+/* #burger-image {
+  max-width: 100%;
+  margin: 10px auto;
+} */
