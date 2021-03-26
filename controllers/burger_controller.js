@@ -5,16 +5,16 @@ const burger = require('../models/burger');
 
 router.get("/", function (req, res) {
     burger.selectAll(function (data) {
-        var hbsObject = {
+        const hbsObject = {
             burgers: data
         };
-        console.log(hbsObject);
+        // console.log(hbsObject);
         res.render("index", hbsObject);
     });
 });
 
 router.post("/api/burgers", function (req, res) {
-    console.log(req.body);
+    // console.log(req.body);
     burger.insertOne(["burger_name"], [req.body.name], function (result) {
          
         // Send back the ID of the new quote
@@ -27,7 +27,7 @@ router.post("/api/burgers", function (req, res) {
 
 
 router.put("/api/burgers/:id", function (req, res) {
-    var condition = "id = " + req.params.id;
+    const condition = "id = " + req.params.id;
 
     console.log("condition", condition);
 

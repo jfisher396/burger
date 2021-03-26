@@ -1,24 +1,103 @@
+body {
+  background-color: #fc6;
+  text-rendering: optimizeLegibility;
+}
+
+#title {
+  font-family: 'Bebas Neue', cursive;
+  color: #fff;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 60px;
+}
+
+.column-title {
+  margin: 20px auto;
+  color: white;
+  text-align: center;
+}
+
 li {
-    padding: 5px;
-    margin: 5px;
-    background: lightgreen;
+  list-style-type: none;
+  padding: 10px;
+  margin: 5px auto;
+  font-size: larger;
+  font-weight: 500;
+  vertical-align: middle;
+  background: lightgreen;
+  min-width: 275px;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}
+
+.main {
+  margin-top: 50px;
+  min-height: 800px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/images/burger.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+#middle-column {
+  padding-right: 0;
+  max-width: 370px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+ion-icon {
+  font-size: 25px;
 }
 
 .create-form {
-    padding: 5px;
-    margin: 5px;
-
+  margin-top: 20px;
 }
 
 .form-group {
-    margin-bottom: 5px;
+  margin-bottom: 5px;
 }
 
-body {
-    background-color: #fc6;
+.input-group-text {
+  color: #fff;
+  border: none;
 }
 
-h1 {
-    color: #f30;
-    margin-top: 20px;
+ul {
+  padding-left: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#not-devoured li {
+
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  min-width: 100%;
+}
+
+#devoured {
+  margin: 0 auto;
+}
+
+#devoured li {
+  text-align: center;
+}
+
+@media only screen and (max-width: 800px) {
+  .main {
+  
+  min-height: 100%;
+  
+}
 }

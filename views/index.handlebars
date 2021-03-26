@@ -1,52 +1,51 @@
 <div class="container">
-    <div class="row">
-        <div class="col-sm-12 text-center" id="top-bar" >
-            <img src="/images/burger.jpg" alt="burger" width="400">
-            <h1>Burger Eater!</h1>
-        </div>
 
-        <div class="col-sm-6" class="task">
-            <h2>Burgers that are ready to eat!</h2>
-            <div class="row">
-                <ul>
-                    {{#each burgers}}
-                    {{#unless devoured}}
-                    {{> burgers/burger-block devoured=true}}
-                    {{/unless}}
-                    {{/each}}
-                </ul>
-            </div>
-        </div>
+    <div class="container-xl main">
+        <div class="row">
 
-
-        <div class="col-sm-6" class="task">
-            <h2>Burgers that have been devoured!</h2>
-            <div class="row">
-                <ul>
-                    {{#each burgers}}
-                    {{#if devoured}}
-                    {{> burgers/burger-block devoured=false}}
-                    {{/if}}
-                    {{/each}}
-                </ul>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="container">
-    <div class="row">
-        <h2>Add a Burger</h2>
-        <form class="create-form">
-            <div class="col-sm-8 text-center">
-                <div class="form-group">
-                    <label for="ca"><strong>Burger Name:</strong></label>
-                    <input type="text" id="ca" name="name">
+            <div class="col-lg-4 col-md-12">
+                <h4 class="column-title">Burgers that are ready to eat!</h4>
+                <div class="row">
+                    <ul id="not-devoured">
+                        {{#each burgers}}
+                        {{#unless devoured}}
+                        {{> burgers/burger-block devoured=true}}
+                        {{/unless}}
+                        {{/each}}
+                    </ul>
                 </div>
+            </div>
 
 
-                <button type="submit">Add Burger</button>
-        </form>
+            <div class="col-lg-4 col-md-12" id="middle-column">
+                <h1 id="title">Burger Tracker!</h1>
+                <form class="create-form">
+                    <div class="input-group">
+                        
+                        <div class="input-group-prepend">
+                            <span class="input-group-text bg-danger" id="basic-addon1"><ion-icon name="fast-food-outline"></ion-icon></span>
+                        </div>
+                        <input class="form-control" type="text" id="ca" name="name" placeholder="Burger Name">
+                        <button class="btn btn-danger" type="submit">Add Burger</button>
+                    </div>
+                </form>
+            </div>
+
+
+            <div class="col-lg-4 col-md-12">
+                <h4 class="column-title">Burgers that have been devoured!</h4>
+                <div class="row">
+                    <ul id="devoured">
+                        {{#each burgers}}
+                        {{#if devoured}}
+                        {{> burgers/burger-block devoured=false}}
+                        {{/if}}
+                        {{/each}}
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
     </div>
-</div>
 </div>
