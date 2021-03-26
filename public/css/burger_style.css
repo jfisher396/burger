@@ -8,12 +8,20 @@ body {
   margin-top: 5px;
 }
 
+.column-title {
+  margin: 20px auto;
+  color: white;
+  text-align: center;
+}
+
 li {
   list-style-type: none;
   padding: 10px;
   margin: 5px;
   font-size: larger;
+  font-weight: 500;
   background: lightgreen;
+  min-width: 250px;
   border-radius: 3px;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -36,17 +44,15 @@ li {
   -o-border-radius: 10px;
 }
 
-
-.create-form {
-  padding: 15px;
-  margin: 5px;
+ion-icon {
+  font-size: 25px;
 }
 
 .form-group {
   margin-bottom: 5px;
 }
 
-/* #burger-image {
-  max-width: 100%;
-  margin: 10px auto;
-} */
+.input-group-text {
+  color: #fff;
+  border: none;
+}
