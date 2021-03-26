@@ -15,6 +15,10 @@ li {
     min-width: 100%;
 }
 
+.main {
+    background-color: #fff;
+}
+
 .create-form {
     padding: 15px;
     margin: 5px;
