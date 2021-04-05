@@ -40,11 +40,11 @@ $(function () {
         type: "POST",
         data: newBurger,
       }).then(function () {
-        // location.reload();
+        location.reload();
       });
     } else {
       alert("Maximum name length exceded. Please use a shorter name.");
-      // location.reload();
+      location.reload();
     }
   });
 });
