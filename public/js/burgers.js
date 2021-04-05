@@ -20,8 +20,8 @@ $(function () {
     event.preventDefault();
 
     const burgerNameInput = $("#ca").val().trim();
-
-    if (burgerNameInput.length < 21) {
+    console.log(burgerNameInput.length)
+    if (burgerNameInput.length <= 25) {
       const wordsArr = burgerNameInput.split(" ");
 
       const capitalizedBurgerName = wordsArr
@@ -40,11 +40,11 @@ $(function () {
         type: "POST",
         data: newBurger,
       }).then(function () {
-        location.reload();
+        // location.reload();
       });
     } else {
       alert("Maximum name length exceded. Please use a shorter name.");
-      location.reload();
+      // location.reload();
     }
   });
 });
