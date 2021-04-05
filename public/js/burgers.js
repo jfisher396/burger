@@ -21,7 +21,7 @@ $(function () {
 
     const burgerNameInput = $("#ca").val().trim();
 
-    if (burgerNameInput.length < 19) {
+    if (burgerNameInput.length < 21) {
       const wordsArr = burgerNameInput.split(" ");
 
       const capitalizedBurgerName = wordsArr
