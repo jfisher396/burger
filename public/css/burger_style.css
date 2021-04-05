@@ -94,6 +94,10 @@ ul {
   text-align: center;
 }
 
+.change-devoured {
+  margin-left: 4px;
+}
+
 @media only screen and (max-width: 800px) {
   .main {
   
