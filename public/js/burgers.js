@@ -20,8 +20,15 @@ $(function () {
   $(".create-form").on("submit", function (event) {
     event.preventDefault();
 
-    const newBurger = {
-      name: $("#ca").val().trim(),
+    const burgerNameInput = $("#ca").val().trim();
+    const wordsArr = burgerNameInput.split(" ");
+
+    const capitalizedBurgerName = wordsArr.map((word) => {
+      return word[0].toUpperCase() + word.substring(1)
+    }).join(" ");
+
+    let newBurger = {
+      name: capitalizedBurgerName,
       devoured: 0,
     };
 
