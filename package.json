@@ -19,9 +19,8 @@
   "homepage": "https://github.com/jfisher396/burger#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "express-handlebars": "^5.1.0",
+    "express-handlebars": "^5.3.3",
     "mysql": "^2.18.1"
   },
-  "devDependencies": {},
   "keywords": []
 }
