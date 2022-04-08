@@ -1,6 +1,17 @@
 # Burger Tracker!
 
 A bootcamp assignment to create a burger logger with MySQL, Node, Express, Handlebars and a homemade ORM. Built following the MVC design pattern; using Node and MySQL to store, query and route data, and Handlebars to generate the HTML.  jQuery, Google Fonts and ionicons were also used in app production.
+
+<p>
+    <img src="https://img.shields.io/badge/-HTML-yellow" />
+    <img src="https://img.shields.io/badge/-CSS-lightgrey" />
+    <img src="https://img.shields.io/badge/-JavaScript-blue" />
+    <img src="https://img.shields.io/badge/-jQuery-red" />
+    <img src="https://img.shields.io/badge/-Handlebars-yellowgreen" />
+    <img src="https://img.shields.io/badge/-Express-blueviolet" />
+    <img src="https://img.shields.io/badge/mySQL-orange"  />
+    <img src="https://img.shields.io/badge/-node.js-green" />
+</p>
  
 
 [A deployed version can be viewed here.](https://stark-badlands-92104.herokuapp.com/)
@@ -16,7 +27,7 @@ A bootcamp assignment to create a burger logger with MySQL, Node, Express, Handl
 4. [License](#license)
 5. [Contributing](#contributing)
 
-### About
+## About
 
 * Burger Tracker! is a restaurant app that lets users input the names of burgers they'd like to eat.
 
@@ -24,19 +35,19 @@ A bootcamp assignment to create a burger logger with MySQL, Node, Express, Handl
 
 * Each burger in the waiting area also has a `Devour it!` button. When the user clicks it, the burger will move to the right side of the page.
 
-### User Story
+## User Story
 
     AS A user, I want to be able to keep track of burgers I want to eat and ones I have eaten
     
 
 
-### Visuals:
+## Visuals:
 
 
 ![Screenshot of page](/media/burger-tracker.png)
 
 
-### Build
+## Build
 
 * In HTML, semantic tags have been used to aid with accessibility.
 * The site is built using a Bootstrap CSS framework.
@@ -64,14 +75,15 @@ This application is released under [MIT](assets/LICENSE.txt) license.
 
 ## Contributing
 
-To contribute to this application, create a pull request.
-Here are the steps needed for doing that:
-- Fork the repo
-- Create a feature branch (git checkout -b NAME-HERE)
-- Commit your new feature (git commit -m 'Add some feature')
-- Push your branch (git push)
-- Create a new Pull Request
+Not seeking contributions at this time.
 
-Following a code review, your feature will be merged.
+## Contact Information
 
-=======
+  * GitHub Username: [jfisher396](https://github.com/jfisher396)
+  * Email: james@james-fisher-web-developer.com
+  * <p>
+    <a href="https://www.linkedin.com/in/jamesfisher-webdev/"><img alt="Linkedin: James Fisher" src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank" /></a>
+    </p>
+
+
+==========
