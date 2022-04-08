@@ -26,6 +26,7 @@ A bootcamp assignment to create a burger logger with MySQL, Node, Express, Handl
 3. [Credits](#credits)
 4. [License](#license)
 5. [Contributing](#contributing)
+6. [Contact](#contact-information)
 
 ## About
 
